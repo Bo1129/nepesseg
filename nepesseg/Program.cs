@@ -24,6 +24,27 @@
                 }
             }
             Console.WriteLine($"4.feladat: Kína népsűrűsége: {nep_suruseg} fő/km^2");
+            //5.feladat
+
+            int kina = 0;
+            foreach (var o in orszagok)
+            {
+                if (o.Orszagnev == "Kína")
+                {
+                    kina = o.Nepesseg;
+                } 
+            }
+
+            int india = 0;
+            foreach (var o in orszagok)
+            {
+                if (o.Orszagnev == "India")
+                {
+                    india = o.Nepesseg;
+                }
+            }
+
+            Console.WriteLine($"5.feladat: Kínában a lakosság {kina-india} fővel volt több.");
 
 
         }
