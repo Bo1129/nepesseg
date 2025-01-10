@@ -45,6 +45,17 @@
             }
 
             Console.WriteLine($"5.feladat: Kínában a lakosság {kina-india} fővel volt több.");
+            //6.feladat
+
+            foreach(var o in orszagok)
+            {
+                if (o.Nepesseg < india)
+                {
+                    Console.WriteLine($"6.feladat: a harmadik legnépesebb ország: {o.Orszagnev}, a lakosság {o.Nepesseg} fő");
+                }
+            }
+            //7.feladat
+
 
 
         }
